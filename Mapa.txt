@@ -1,0 +1,1689 @@
+Intoducción a Redes 19-O
+	Fundamentos
+		Objetivos
+			Conceptos
+			Componentes
+			Funcionamiento
+			Historia
+		Terminología
+			Definición
+				Sistema
+					Comunicación
+						Dispositivos Eléctronicos
+							Capacidad de Cómputo
+							Almacenamiento
+							Enlaces físicos
+								Medios guiados
+								Ópticos
+								Inalambricos
+			Función
+				Habilitan 
+					Comunicacion
+						Dispositivos 
+							Terminales
+				Obtener
+					Información
+				Procesar
+					Información
+						Colaborativa
+				Enviar
+					Información
+			Dispositivos
+				Teléfonos
+				PC
+				Servidores
+				Sensores
+				Dispositivos de Red
+					Switches
+					Routers
+					Hubs
+			Enlaces
+				Inalambricos
+					Wifi
+					Bluetooth
+					Infrarrojo
+					NFC
+				Medios Guiados
+					Cable de cobre
+				Fibra Óptica
+			Señales
+				Normal
+					Reloj
+					Datos
+				Manchester
+					0 abajo
+					1 arriba
+				Manchester Diferencial
+					0 regreso
+					1 cambio transición
+				Modulación analógica
+					Para poder viajar 
+						Más distancia
+			Protocolos
+				Dispositivos utilizan
+					Intercambio mensajes
+				Definición
+					Formato
+					Orden
+					Mensajes
+						2 o + entidades
+							Comunican
+					Acciones Tomadas
+						Transmisión
+						Recepción
+						Otro suceso
+							Fin del temporizador
+			Sistemas que integran una red
+				Hogar
+				Empresarial
+				Celular
+				AD HOC
+				ISP
+			END 2 END
+				Funcionalidad 
+					Nodos terminales
+				Simplifica diseño
+					Aplicaciones
+        Términología
+			Historia
+				Primeras redes
+					Comparitir recursos
+						Centralizados
+							Costosos
+				Arpanet
+					Avanced
+						Research
+							Projects
+								Agency
+									Network
+					Necesidad
+						Interconectar
+							Computadoras
+								Altas
+									Prestaciones
+										Hardware
+					Ópero
+						Conmutación
+							Paquetes
+					Primeros sistemas
+						Implementar
+							TCP/IP
+					Base de internet
+				Padres Internet
+					Paul Baran
+						Topologías Red
+							Resistentes a ataques
+							Inventores
+								Estrategía
+									Conmutación
+										Paquetes
+					Leonard Kleinrock
+						Computadora UCLA
+							Primer Nodo Internet
+						Estategía de conmutación
+							Modelo matemático
+								Almacenamiento
+									Reexpedición datos
+							Teoría colas
+					Vinton Cerf
+						Internet Lógica
+						Protocolos TCP/IP
+						Interconexión redes
+							Internet
+				Evolución
+					Velocidad de comunicación
+					Tipo
+						Aplicaciones
+						Usuarios
+						Dispositivos
+					Texto
+						Imágenes
+							Multimedia
+								Multimedia HD
+					Servicios Actuales
+						Telefonía
+						Videostreaming
+						Acceso Inalambrico
+						Distribución P2P
+						Computo en la nube
+						Mundos Pequeños
+			Hardware y Software
+				Internet
+					Sistema
+						Información
+							Global
+					Enlazado lógicamente
+						Único espacio de direcciones
+							Protocolo de internet
+					Soporta comunicaciones
+						Protocolos
+							Modelo TCP/IP
+							O compatibles
+					Povee
+						Usa
+							Hace accesible
+								servicios 
+									alto nivel
+									públicos
+									privados
+				Estandarización
+					Internet Engeneering Task Force
+						Estandares
+							protocolos
+							internet
+						Documentos RFC
+							Request
+								For 
+									Comments
+			Sistema distribuido
+				Definición
+					Plataforma
+						Provee servicios
+							Facilita ejecución
+								Aplicaciónes Distribuidas
+									Ejecutan terminales
+					Colección dispositivos
+						Capacidad de computo
+							procesamiento
+							comunicación
+						Interconectados
+							Ejecutar
+								Aplicaciones
+									Distribuidas
+						Funcionalidad
+							Aplicación
+								2 entidades
+				Ejemplos asplicaciones
+					Navegadores Web
+					Correo electrónico
+					Mensajería instantanea
+					Vidocnferencia
+					Envío/descarga archivo
+				App distribuida
+					Requiere
+						Protocolo
+						API 
+							Implementar
+								Protocolo
+				API
+					Interfaz
+						Programación 
+						aplicaciones
+					Conjunto
+						Facilidades
+							Software
+								Funciones
+								Constantes
+								Clases
+								Estructuras de datos
+								Para
+									Construir
+										Software
+					Caso Aplicaciones web
+						Interfaz
+							Comunicación
+								Internet
+				Sockets
+					Mayoría 
+						sistemas 
+							operativos
+					Integrada 
+						Operaciones E/S
+							Maquinas
+					Varias funciones
+						Controlar
+							Comunicaciones
+								send()
+								recv()
+								close()
+		Direccionamiento en la internet
+			Identificadores de red
+				Definición
+					Cadena
+						Simbolos 
+							Única
+					Asociada
+						un
+							nodo
+					Permite
+						Diferenciarlo
+							Otros
+					Sí contiene
+						Información
+							Localización
+								dirección
+				Tipos
+					MAC 
+						Capa Enlace
+						ID
+							Interfaces
+								Nodos
+									Conectados
+										Tecnlogía 
+											Enlace
+												Ethernet
+												WIFI
+												Bluetooth
+												Zigbee
+							6 bytes, 48 bits
+							Hexadecimal
+					IP
+						Capa Red y Transporte
+						Id
+							Nodos
+								Conectados
+									Red
+						32 bits
+							separados
+								octetos
+						Clases A B C D E
+							Antes
+							Crecimiento
+					Puerto
+						Capa aplicación
+						16 bits
+						Identificar 
+							aplicaciónes
+						Servicios
+							Red
+						Terminales
+							Ejecutan
+								Más de 1
+								 Aplicación
+								  A la vez
+					Nombre de usuario
+						Aplicaciónes
+							Identidad de usuario
+								Seción
+					0-1023
+						Bien conocidos
+						Restringidos
+		Conmutación de paquetes
+			Contexto
+				Encaminamiento
+					Conmutación de paquetes
+						Definición
+							Estrategia
+								transmitir
+									mensaje
+										piezas
+											(paquetes)
+							Red
+								Alto
+									Grado
+										Descentalización
+							Servicio 
+								Mejor 
+									Esfuerzo
+						Características
+							3 partes
+								Encabezado
+								Mensaje
+								Trailer
+							Encabezado
+								Información
+									Entregar
+										Mensaje
+							Mensaje
+								Datos
+									Aplicación
+							Trailer
+								Deteccion Corrección 
+									Errores
+						Retardos
+							Propagación
+								d PI
+									Tiempo
+										Recorrer
+											Fuente
+												Destino
+								Depende
+									medio
+										propagación
+								Menor
+									Velocidad
+										Luz
+											(3x10^8 m/s)
+								d PI = d/s
+									d distancia 
+										entre 
+											2 nodos
+									s
+										velocidad
+											propagación
+												enlace
+							Almacenamiento y reenvio
+								Retardar hasta
+									Recibir todo 
+										el mensaje
+							Transmisión dt
+								Tiempo
+									destino
+										recibir
+											bits
+										 		paquete
+									Sin r propagacion
+								dt = L/R
+									L Tamaño bits
+									R Tasa del enlace
+							Pocesamiento
+								Tarea
+									nodos de red
+									examinar
+										encabezado
+										trailer
+									Hacia donde
+										Se dirige
+									Revisión
+										Corrupción
+								dp
+									Tiempo
+										Procesamiento
+											microsegundos
+												o menos
+							Encolamiento
+								Estrategía
+									Nodos de red
+										mantener paquetes
+											cola
+									Enlace de salida
+										ocupado
+								dp
+									tiempo
+										tarda
+											paquete
+												salir
+													cola
+														encaminador
+									aleatorio
+									variable aleatoria
+										exponencial negativa
+										Pareto
+							Intensidad del tráfico
+								Medida adimensional
+									estimular
+										extensión
+											retardo
+												encolamiento
+								Ti= La/R
+									L tamaño de bits 
+										del paquete
+									a Razon
+										# Paquetes
+											por unidad tiempo
+										R tasa de tranferencia
+							Retardo nodal
+								Suma
+									Propagación
+									transmición
+									encolamiento
+									procesamiento
+						Otras estrategias de transmisión
+							Conmutación de circuitos
+								Caracterisricas
+									Se reservan
+										recursos
+											establecer
+												ruta
+									Transmisiones
+										una vez
+											red
+												crea
+													circuito
+									Tasa 
+										fija
+									Tasa
+										ganarantizada
+									TDMA o FDMA
+									Rutas
+										Disuelven
+											Explícitamente
+		Módelos de referencia
+			Marco contextual
+				Para 
+					habilitar 
+						comunicaciones
+				Características señal
+				Medida plug
+				Reglas enviar señal
+				Mecanismo
+					Deteccion
+						errores
+				Estrtegía
+					establecer
+						rutas
+				Control
+					transmisión
+				Defensa
+					ataques
+				Muchas otras cosas
+			Modelos de referencia
+				Arquitectura capas
+				Definición
+					Patron
+						Diseño
+					Organiza
+						Sitema
+							Complejo
+					Jerarquía
+						componentes
+						capas
+					Cada
+						capa
+							usa
+								funciones
+									capa
+										inferior
+					Comunicación
+						lógica
+							capas
+								horizontales
+					Manoj Wadekar
+						Construir
+							soluciones
+						diferentes
+							componentes
+						interoperar
+							flexibilidad
+						sin
+							perder
+								flexibilidad
+				Ventajas
+					Modularidad
+						Fácil
+							Administración
+					Confiabilidad
+						Redundancia
+					Flexibilidad
+						Facil
+							reimplementacion
+						Cambios
+							afectan
+								capas
+									adyacentes
+					Interoperabilidad
+						Fácil
+							administración
+				Modelo TCP/IP
+					Redes 
+						modelo
+							capas
+					Aplicacion
+						Transporte
+							Red
+								Enlace
+									Física
+					Desventajas
+						Funcionalidad
+							Repetida
+						Malinterpretación
+							Medidas
+								Rendimiento
+						Dificultad
+							Implementación
+						Comunicación
+							ineficiente
+								protocolos
+									no 
+										adyacentes
+
+				Modelo OSI
+					Aplicación
+						Presentación
+							Mensajes codificados
+							Seción
+								Delmita
+								Sincroniza
+									Datos
+										Intercambiados
+				Encapsulamiento
+					Mensaje
+					Segmento
+					Datagrama
+					Trama
+	Capa de Aplicación
+		Introducción
+			Contexto
+				Objetivo
+					Servicios
+						alto
+							nivel
+					Aplicaciónes
+						distribuidas
+				Nodo
+					Terminal
+				Unidad
+					Mensaje
+				Protocolos
+					HTTP
+					DNS
+					DHCP
+					Bittorrent
+					Kademila
+				Servicios
+					Transferencia
+						Archivos
+					Traducción
+						Nombres
+					Asignación
+						Direcciones
+					Busqueda
+					Control errores
+			La Internet vs La web
+				La web
+					Definición
+						Sistema Hipermedia
+						Distribuido
+						Permite
+							Acceder
+								Hipermedia
+									Ligados
+						No en el
+							mismo servidor
+						Capa de 
+							aplicación
+						Arquitectura
+							Cliente
+								Servidor
+					Padre
+						Tim Berners Lee
+							1989
+							HTML
+							URL
+								Identificar
+									Recursos
+							W3C
+				Vistazo HTTP
+					Definición
+						Principal
+							Protocolo
+								Navegador
+									Web
+					Características
+						2 programas
+							Cliente
+							Servidor
+						Enviar
+							Descargar
+								datos
+						Interacción
+							Clientes
+							Servidores
+						Protocolo
+							Transporte
+								Confiable
+						RFC 1945 Y 2616
+						V3
+							En desarrollo
+				HTML
+					Def
+						Estandár
+							Representación
+								Páginas
+									Web
+						Lineamientos
+							Generales
+						Visualización
+							Documento
+						URL
+							protocol://host:port_num/document?parameters
+							protocol nombre 
+								del protocolo
+							host dominio 
+								de la computadoras
+							port 
+								número de puerto
+							document 
+								nombre del documento
+							parameters 
+								parámetros opcionales de la consulta
+		Aplicaciones de red
+			Arquitectura de aplicación
+				Cliente Servidor
+					Def
+						Modelo de comunicación de
+						comunicación centralizado 
+						en el que
+						la funcionalidad de 
+						la aplicación reside
+						en una terminal 
+						conocida como
+						servidor.
+					Info
+						Procesos clientes
+						solicitan
+						servicios
+							servidor
+						Clientes
+							No comunican
+							entre ellos
+				P2P
+					Def
+						Modelo de comunicación 
+						altamente descentralizado 
+						pueden existir servidores, 
+						no son medular 
+						de la aplicación. 
+						Todos los participantes
+						contribuyen con sus recursos 
+						para soportar la 
+						funcionalidad de la
+						aplicación
+					Procesos
+						pares
+					Clientes o servidores
+				Contraste
+					Cliente - Servidor
+						Son fáciles de administrar
+						Son fáciles de programar
+						Pueden ser seguras
+						Pueden ser confiables
+						Están bien estudiadas
+						Requieren mucha 
+							infraestructura de red
+					P2P:
+						difíciles administrar
+						difíciles programar
+						ser seguras
+						confiables
+						sistemas especializados
+						altamente escalables
+				Retos P2P
+					Los enlaces de 
+						las terminales
+							son asimétricos
+					Necesitan sofisticados 
+						sistemas de cifrado
+					Deben emplear 
+						incentivos ingeniosos
+					Las aplicaciones 
+						son etiquetadas
+							como maliciosas
+				Sockets
+					Interfaz entre la 
+						capa de aplicación y
+							la capa de transporte 
+								cuya función es
+						proveer las primitivas 
+							de comunicación
+						que habilitan 
+							el intercambio de
+								mensajes entre procesos. 
+						El programador tiene 
+							poco control sobre
+								el funcionamiento 
+									del socket.
+						Usualmente, los 
+							sockets se usan para
+						programar servicios 
+							de alto nivel.
+			Servicios capa transporte
+				Entrega confiable
+					Características
+						Se garantiza que 
+							todos los paquetes 
+								llegan sin errores 
+									y en su 
+										totalidad a 
+											su destino.
+						Aplicaciones:
+							Correo Electronico
+							Transferencia Archivos
+							Aplicaciones financieras
+						No tolerantes
+							a perdida
+				Transmisión constante
+					Caudal datos constante
+						telefonía ip
+					Suceptibles 
+						ancho banda
+				Entrega Oportuna
+					Def
+						Se asegura 
+							que el 
+								tiempo de
+									recepción de cierta 
+										cantidad de
+						información no 
+							excederá un
+								tiempo límite dado
+					Aplicaciones
+						Juegos
+						Teleconferencias
+					No tolerantes
+						Retardo
+				Enrega Segura
+					Comunicación confidencial
+					Mensajería Instantanea
+			Servicios de transporte 
+				Provistos por 
+					la Internet
+				TCP
+					1. Multiplexación: 
+						varias aplicaciones
+						pueden usar una misma dirección IP
+					2. Establecimiento de la conexión:
+						creación de enlace lógico fullduplex
+						entre fuente y destino
+					3. Confiabilidad: Entrega completa, en
+						orden y sin errores
+					4. Segmentación de la información
+					5. Detección de errores
+					6. Control de la 
+						congestión: 
+							regulación
+								de la tasa de 
+								transmisión de mensajes
+				UDP
+					1. Multiplexación
+					2. Detección de errores
+				Protocolos
+					HTTP
+					FTP
+					SMTP
+					DNS
+					BitTorrent
+				HTTP
+					Contexto
+						Def
+							Base de la web
+							Transferencia
+								Hipertexto
+							Capa Aplicación
+								Sistemas
+									Información
+										Hipermedios
+								Colaborativos
+								Distribuidos
+							Generico
+							Muchas aplicaciones
+							Independiente
+								Datos transferidos
+					Versiones
+						HTTP 0.9: primer borrador (1991)
+						HTTP 1.0:
+							RFC 1945 (1996)
+						HTTP 1.1:
+							RFC 2616 (1999)
+						HTTP 2.0:
+							RFC 7540 (2015)
+						HTTP 3.0: borrador (2019)
+					HTTP 1.1
+						General
+							Conexión no persistente
+								Por cada objeto en 
+									un documento Web
+										1. se establece 
+											una conexión TCP
+										2. se solicita 
+											el objeto 
+												al servidor
+										3. el servidor 
+											envía el objeto
+										4. el cliente 
+											recibe el objeto 
+												lo interpreta
+							RTT
+								Tiempo que lleva 
+								obtener la respuesta
+								de un servidor 
+								a partir del tiempo 
+								en que se 
+								genera una petición
+							Conexión persistenete
+								HTTP 1.1 permite reutilizar 
+								conexiones TCP
+								para hacer 
+								solicitudes múltiples 
+								de objetos
+								Persistente concurrente
+									No esperar respuesta
+										Otra solicitud
+							Solicitudes
+								GET
+									Solicitar un documento
+								HEAD
+									Información status
+								POST
+									Envía datos
+										Servidor
+								PUT
+									Sube un recurso
+							Estructura solicitud
+								Request Line
+								Header Lines
+								Blank line
+								Entity body
+							Formato get
+								GET /element version CRLF
+								host: www.google.com
+								connection: close
+								user-agent: Mozilla/5.0
+								accept-language: fr
+							Significado
+								GET nombre del método
+								/element URL 
+									del elemento solicitado
+								version version del 
+									protocolo HTTP
+								CRLF retorno 
+									de carro 
+									y salto de línea
+							Respuesta
+								HTTP/1.1 302 Found
+								Cache-Control: private
+								Content-Type: text/html;
+								charset=UTF-8
+								Content-Length: 272
+								Date: Thu, 20 Oct 2016 23:25:50
+								GMT
+								Connection: close
+							Status
+								100 Continue
+								200 OK
+								304 Not modified
+								400 Bad request
+								501 Not implemented
+
+	Capa de Transporte
+		Introduccion
+			Marco Contextual
+				Objetivo
+					Gestionar comunicación
+						Entre procesos
+				Nodo
+					Terminal
+				Unidad
+					Segmento
+					Datagrama UDP
+				Protocolos
+					TCP
+					UDP
+				Servicios
+					multiplexación
+					desmultiplexación 
+					control de flujo
+					entrega ordenada
+					segmentación de mensajes 
+					control de errores
+			Funcionalidad
+				Ofrece servicios a la aplicación
+				Provee comunicación 
+					lógica entre terminales
+				No se ejecuta en 
+					los nodos del núcleo 
+						de la red (o sí...)
+				Convierte los mensajes 
+					de la capa de 
+						aplicación 
+							en segmentos
+			Servicio de entrega de mensajes
+				Multiplexar los datos 
+					que van a la red
+				Desmultiplexar los datos 
+					que vienen de la red
+			Multiplexión
+				Proceso que consiste en:
+					Recibir los mensajes 
+						de los sockets
+						de los procesos
+					Crear un segmento 
+						agregando el
+						encabezado de 
+						la capa de
+						transporte
+					Pasar el segmento 
+						a la capa de red
+						usando una única IP
+			Desmultiplexión
+				Proceso que consiste en:
+				Recibir desde 
+					una única IP los
+					segmentos de red
+				Examinar el 
+					encabezado del
+					segmento recibido
+				Identificar el 
+					socket al que va
+					dirigido el segmento
+				Pasar el 
+					segmento al socket
+			Formato
+				32 bits
+					Puerto origen
+					Destino
+				Otras cabeceras
+				Datos de aplicación
+			Puertos bien conicidos
+				21 FTP
+				22 SSH
+				23 Telnet
+				80 HTTP
+				110 POP3
+				443 HTTPS
+				993 IMAP4
+			Puerto
+				ID procesos o aplicaciones
+					16 bits
+				Clientes crean
+					Sockets por peticion
+						puertos efímeros
+		Sockets
+			Contexto
+				Tipos de aplicaciones 
+					distribuidas
+				Aplicaciones abiertas
+				Aplicaciones propietarias
+			Requisitos básicos
+				Determinar el 
+					paradigma de
+						comunicación 
+							de la aplicación:
+								Por flujo 
+									TCP/IP
+								Por datagrama 
+									UDP
+			Conocer la 
+				interfaz programación
+					de aplicaciones 
+						de los sockets
+			Diseñar un 
+				protocolo de
+					comunicación
+		Paradigma de comunicación
+			Flujo
+				Secuencia de bytes 
+					que fluye de un 
+						programa a otro
+				Características
+					Orientado a conexión
+					Comunicación uno a uno
+					El emisor transmite 
+						flujos de bytes
+					Transferencia de 
+						longitud variada
+					Es el más utilizado
+					TCP lo provee
+			Datagrama
+				Sin conexión
+				Comunicación de 
+					varios a varios
+				El emisor 
+					emite mensajes
+				Los mensajes están 
+					limitados a 64KB
+				Se usa 
+					para aplicaciones
+						multimedia o P2P
+				UDP lo ofrece
+			Responsabilidades del programador
+				Verificar que los 
+					mensajes arribaron 
+						en su totalidad
+				Establecer un mecanismo 
+					de retransmisión 
+						ante pérdidas 
+							y retardos
+				Detectar mensajes 
+					duplicados
+				Ordenar los 
+					paquetes si 
+						es necesario
+			Sockets
+				Características
+					Estándar para la
+						comunicación de Internet
+					 		que está disponible
+					   			en la mayoría 
+					   				de los 
+					   					sistemas operativos
+					Están integrados en
+						las operaciones de
+							entrada y salida
+								(archivos) aplicación usa 
+									para hacerle referencia
+					La funcionalidad de
+						los sockets está
+					  		definida muchos métodos
+		Protocolo de datagramas de usuario
+			UDP
+			Protocolo que permite 
+				que la capa de aplicación 
+					se comunique con la
+						capa de red casi de manera directa. 
+			No requiere establecer 
+				la conexión
+				y sus cabeceras son simples. 
+			Provee el servicio 
+				de multiplexión 
+					y comprobación 
+						de errores simple.
+			Aplicaciones UDP
+				NO HAY CONEXIÓN
+				Sensibles a retardo
+				Multicast
+					Una fuente
+					Varios nodos
+				Cabecera
+					4 campos
+						puerto fuente
+						puerto destino
+						tamaño del mensaje
+						Suma de verificación
+				Aplicaciones
+					Servidor archivos remoto	
+						NFS
+					Flujo Multimedia
+						Protocolos propietarios
+					Transferencia archivos
+						Bittorrent 
+						TFTP
+					Telefonía sobre internet
+						Protocolo propietario
+					Traducción de nombres de domnio
+						DNS
+				Clientes promiscuos
+					Proceso que puede 
+						recibir cualquier
+							mensaje, sin
+								importar quien
+									sea el remitente.
+					Uso
+						Monitorizar red
+				Llamadas bloqueantes
+					A la espera
+						De solicitud
+				Llamadas no bloqueantes
+					No es posible en Py 3.7
+				Confiabilidad
+					La retransmisión de 
+						solicitudes es el
+					mecanismo mediante 
+						el que un cliente
+					puede funcionar 	
+						a pesar de fallas.
+				Congestion por retransmisión
+					Retroceso exponencial
+						Algoritmo que exponencialmente baja
+							la tasa de retransmisión para tratar de
+								descongestionar un recurso de red,
+									por ejemplo, los búferes de los
+										encaminadores.
+		Fundamentos de las trasmisiones confiables
+			Definición
+				Capacidad de un componente 
+					de realizar sus funciones 
+						sin fallas en 
+							un ambiente que 
+								las propicia.
+			Capa de transporte
+				Proveer confiabilidad
+					sin que la red
+						la provea
+			Funcionamiento sobre 
+				red con errores 
+					a nivel de bit
+						Multiplexación
+						Detección de errores:
+							Suma de verificación
+							Bit de paridad
+							Códigos de redundancia cíclica
+						Retroalimentación del receptor
+							ACK
+							NACK
+						Retrasmisión
+			Características requeridas para operar
+				con pérdida de segmentos:
+					Retransmisiones
+					Números de secuencia
+			Transmisión concurrente
+				Consiste en enviar 
+					cierto número de
+						segmentos y 
+							esperar un 
+								único mensaje
+					de reconocimiento 
+						por ellos
+				Implementar un protocolo concurrente
+					Ampliar números 
+						de secuencia
+					Emisor y receptor
+						Buffer
+					Modificar protocolo
+						Go-Back-N
+						Selección repetida
+					Funcionamiento del emisor
+						El emisor envía a lo más n
+							segmentos sin 
+								esperar un acuse (ACK)
+						Se establece un 
+							temporizador por
+								segmento enviado
+						Si se vence 
+							un temporizador,
+						entonces el emisor 
+							reenvía todos los
+								segmentos que 
+									no han sido reconocidos
+						Recepción de ACK:
+							El segmento acusado 
+								se da por entregado
+							Se ajustan los 
+								apuntadores base y next
+							Se transmiten 
+								nuevos segmentos
+					Repetición selectiva
+						Estrategia que consiste en
+							retransmitir solo los 
+								segmentos que pudieron perderse 	
+									o corromperse; 
+						los segmentos reconocidos 
+							no se solicitan
+								nuevamente
+	Capa de Red
+		Marco contextual
+			Objetivo
+				gestionar la comunicación
+					entre nodos 
+						de diferentes redes
+			Nodo
+				Cualquiera
+			Unidad
+				Datagrama
+			Protocolos
+				IP
+				ICMP
+				AODV
+			Servicios
+				Direccionamiento
+				Encaminamiento
+				Fragmentación de paquetes
+				Contol de errores
+				Traducción de direcciones
+			Posibles Servicios
+				Nivel de paquete
+					Entrega garantizada
+					Entrega oportuna
+				Nivel de flujo
+					Entrega ordenada
+					Mínimo ancho de banda
+					Máxima variabilidad 
+						en el retardo (jitter)
+					Conexión privada
+					Conexión anónima
+				Internet
+					Solo mejor esfuerzo
+		Funcionamiento de una red de datagramas
+			Objetivo general
+				Mover paqutes de un nodo
+					Hacia otro
+				Encaminadores
+			Encaminador
+				Nodo de red que sirve para
+					interconectar redes. 
+				El encaminador elige 
+					la mejor ruta para
+						que los paquetes 
+							arriben rápidamente
+								a su destino.
+				Arquitectura del encaminador
+					Componentes encaminador:
+						Puertos E/S
+							Implementan la capa 
+								física y de enlace.
+							Los puertos de
+								entrada realizan 
+									la tarea de reenvío
+						Conmutador de puertos: 
+							Red de alta velocidad 
+								que transmite la
+									información de los 
+										puertos de
+											entrada a los 
+												de salida.
+						Cola: 
+							Memoria que almacena los
+							paquetes de salida cuando hayan
+							un enlace ocupado
+						Procesador: 
+							Hardware encargado de
+							ejecutar los protocolos de
+							encaminamiento. 
+							Actualiza la tabla
+							de reenvío y 
+							la de encaminamiento
+						Bus:
+							Los puertos de salida reciben los
+								paquetes por medio 
+								de un bus compartido
+							Todos los puertos 
+								reciben un
+									mismo paquete
+							- Solo el puerto de salida que
+								corresponde recibe el paquete
+							- La probabilidad de encontrar el bus
+								ocupado aumenta mientras más
+								puertos se añaden al encaminador
+					Técnicas de conmutamiento
+						Malla completa:
+							Todos a todos
+							Costosa
+						Conmutador de barras cruzadas:
+							2N buses interconectan a los
+								puertos de entrada con 
+									los de salida
+						Red omega:
+							Por bits
+					Funciones del encaminador
+						Reenvío: 
+							Mover los paquetes
+								entrantes al enlace de salida
+									apropiado analizando la dirección
+										del nodo destino.
+					Encaminamiento: Determinar la
+						ruta que atravesarán 
+							los paquetes
+								para llegar a 
+									su destino mediante la
+										ejecución de un protocolo de
+											encaminamiento
+					Tabla de reenvío
+						Empate por prefijo
+			Redes definidas por software
+				Paradigma de red 
+					en el que se separa
+					el plano de control 
+					del plano de datos
+					de tal manera 
+					que las funciones 
+					de encaminamiento 
+					se centralizan en un
+					controlador. 
+					Siendo así, 
+					la red ya no
+					tendría encaminadores, 
+					sino conmutadores 
+					y controladores.
+		Protocolo IP
+			Contexto
+				La capa de red
+					Componentes:
+					Protocolo de Internet
+					Protocolos de encaminamiento
+					Protocolo de mensajes de 
+						control de Internet
+				IPv4
+					Características
+						Contiene 13 campos 
+							con uno opcional
+						El tamaño típico 
+							de la cabecera es 
+								de 20 bytes
+					Formato del datagrama IPv4
+						Campos:
+						Versión: vale cuatro para IPv4
+						Tamaño del encabezado: 
+							Cantidad de palabras de 32 bits
+						Tipo de servicio: 
+								experimentación
+						Tamaño total del datagrama: 
+							valor típicamente menor que 1500 bytes
+						Identificador: 
+							Entero que determina
+							el número de fragmento 
+							de un datagrama
+						Banderas [0, DF, MF]: 
+							Sirven para controlar 
+								una comunicación con 
+									datagramas fragmentados
+						Desplazamiento: 
+							Indica la posición
+								del fragmento 
+									en múltiplos 
+										de ocho bits
+						Tiempo de vida: 
+							Indica el número
+							de mensajes 
+								que un datagrama
+									puede ser reenviado
+						Protocolo superior: 
+							Número entero
+								que identifica el 
+									protocolo que usa
+										los servicios de IP. 
+											TCP se identifica 
+												con un seis y 
+													UDP con 17.
+						Suma de verificación: 
+							código que permite 
+								identificar si 
+									la información
+										del encabezado 
+											del datagrama 
+												es integra.
+						Dirección IP: 
+							Entero de 32 bits que 
+								identifica de forma 
+									única a los hosts conectados 
+										a la Internet
+						Opciones: Campo rara vez usado.
+						Datos: 
+							el segmento de 
+							la capa de transporte
+					Fragmentación de datagramas
+						Tamaño limitado
+							Ejercicio
+		Direccionamiento IP
+			Dirección IP
+				Cadena 32 bits
+					Octetos
+				Notacion decimal
+					Separada por .
+				Identificar redes y hosts
+			Clase A, B, C, D
+				A
+					1-126
+					2^7-2 redes
+					2^24-2 hosts
+					8 bits red
+					24 bits host
+					máscara 255.0.0.0.0
+				B
+					128-191
+					2^14 redes
+					2^16-2 hosts
+					16 bits red
+					16 bits host
+					255.255.0.0
+				C
+					192-223
+					2^21
+					2^8-2
+					24 bits red
+					8 bits host
+					255.255.255.0
+			Subredes IP
+				Redes IP
+					Interfaces de terminales
+						+
+							Encaminador
+								red ip
+					Identificador subred
+						Prefijo en común
+						Aplicar máscara
+					Conmutadores no 
+						tienen dirección ip
+			Cálculo de subredes
+				CIDR
+					Bloques tamaño
+						organizaciones individuales
+					a.b.c.d/x
+					x longitud del prefijo
+				VLSM
+					Mascara subred variable
+					Dividir red
+						Más subredes IP
+				NAT
+					Correspondencia ip pública
+						ip's privadas
+					Encaminador NAT
+						Compuerta red privada
+							y internet pública
+						Una de sus interfaces
+							IP publica
+							Todos usan la misma
+					Corespondencia mediante tabla
+		Enaminamiento IP
+			Reenvio IP
+				Hacer llegar
+					Datagrama IP
+						Origen a destino
+							red TCP/IP
+				Si el destino está en la misma red IP
+				que la fuente:
+					1. Traduce la dirección IP del
+					destino a su correspondiente
+					dirección MAC
+					2. Pasa el datagrama a la capa de
+					enlace usando la dirección del
+					nodo destino
+				Si el destino está en la otra red IP
+				que la fuente:
+					1. Traduce la dirección IP del
+					encaminador por omisión a su
+					correspondiente dirección MAC
+					2. Pasa el datagrama a la capa de
+					enlace usando la dirección del
+					encaminador por omisión
+			Reenvío IP en el núcleo de la red
+					1. Encuentra una entrada en la tabla
+						de encaminamiento cuyo prefijo
+						presente la máxima similitud con el
+						prefijo de la dirección destino
+					2. Con base en el empate, determinar
+						la interfaz de red por la que el
+						datagrama será reenviado
+					3. Determinar la dirección de enlace
+						del siguiente salto
+					4. Pasar el datagrama a la capa
+						inferior usando la dirección física
+						que corresponda a la tecnología de
+						enlace
+			Protocolos de Encaminamiento IP
+				Reglas
+				Calculan ruta
+				Menor costo
+				Metrica
+				Intercambio
+				Información
+				1 Nodo
+				Vecinos
+			Tabla de encaminamiento
+				Informacion decidir
+					nodo menor distancia
+						destino
+			Clasificación de los protocolos de encaminamiento
+				Estático
+					Por humanos
+				Dinámico
+					Protocolos
+						Algoritmos
+				Sensibles al tráfico
+					Actualizan
+						Congestion
+				Estado del enlace
+					Inundan la red
+						mapa topológico
+						Dijkstra o Prim
+				Vector Distancia
+					Algoritmos Iterativos
+						Bellman Ford
+				Protocolo RIP
+					Protocolo Sistemas Autonomos
+					Primero en ser incluido
+					RFC 1058 2453
+					Routing information protocol
+					En desuso
+					OSPF
+		Protocolo
+			Modelo de una red
+				Representación abstracta
+				Red de computadoras
+					Sistema distribuido
+			Sistema Distribuido
+				Colección E
+					Entidades comunican
+						Mensajes
+				Objetivo común
+				Aparenta ser Individual
+			Entidades
+				Unidad operacional
+					Sitema distribuido
+				Computadoras personales
+				Telefonos
+				Servidores
+				Conmutadores
+				Encaminadores
+			Capacidades de las entidades
+				x en E posee
+					Memoria individual
+				Almacenar y leer datos
+				Procesar
+				preparar
+					transmitir
+						enviar
+							mensajes
+				Establecer
+					reestablecer
+						temporizador
+			Estatus
+				idle
+				processing
+				wating
+			Activación
+				Impulso espontaneo
+				Interrupción temporizador
+				Recepción mensaje
+			Acciones
+				Ocurre operacion
+					Desata accion
+						Conjunto de operaciones
+							Finita indivisible
+								puede ser nil
+			Regla
+				Status x Event -> action
+					(s,e)->A
+			Protocolo
+				Conjunto de reglas
+					x obedece
+				Completo
+				No ambiguo
+				cada par ordenado
+					una A asociada
+			Problema
+				Descripción especifica tarea
+					P = <hPinit,Pfinal, Ri>
+			Conjunto de restricción
+				Propiedades adicionales 
+					que debe
+						tener un sistema 
+							distribuido para que
+								un protocolo pueda 
+									resolver un problema.
+				Algunas restricciones
+					Política de encolamiento
+					Enlaces bidireccionales
+					Entrega garantizada
+					Confiabilidad total
+					Conectividad total
+					No usuarios maliciosos
+
+	Capa de Enlace
+		Marco contextual
+			Canal de difusión
+				Wifi
+			Canales P2P
+		Capa Enlace
+			Reglas
+				Equipos
+				Mismo Enlace
+			Broadcast complicados
+		Servicios
+			Construcción datagramas
+				Añadir cabecera y trailer
+					Información control
+						Capa enlace
+			Control acceso medio
+				Reglas transmitir
+					Tramas en enlace
+			Detección y correccion errores
+				Alteraciones de bits
+					FEC
+			Entrega confiable
+				Tramas atraviesan
+					enlaces sin error
+				Retransmiciones y ACK
+			Deteccion de errores
+				Bit Paridad
+				Paridad bidimencional
+				Códigos redundancia ciclica
+			Implementación
+				Hardware de red (nic)
+				Procesador proposito especifico
+				Chips AR5006EG, Intel 8254X, BCM4331
+				Conectadas como un periferico
+					PCI
+						periferical 
+						component 
+						interconnect
+			Direcciones
+				MAC
+				Se asocia a NIC
+				Depende de LAN
+				6 bytes ETH WIFI
+				NIC MAC única
+				24 bits id fabricante
+		Switches
+			Funciones
+				Filtrado tramas
+					Enviar o descartar
+				Reenvio de tramas
+					Puerto de salida
+						Para reenviar
+							Inspeccionando tabla
+			Direccion MAC especial
+			Al arribar una trama
+				Si no existe un par 
+					(mac, interface),
+						entonces la trama 
+							se difunde 
+								por la red
+				Si el destino se 
+					alcanza por la 
+						interfaz x, 
+							i.e., se tiene 
+								la entrada
+									(mac, x), entonces 
+										la trama se descarta
+				Si el destino se alcanza 
+					por la interfaz y, 
+						i.e., se tiene 
+							la entrada
+								(mac, y), 
+									entonces la trama 
+										se re￾envía por y
+				no se configura
+					Plug and play
+			Red segmentada con switches
+				Eliminan coliciones de res
+					Almacenan tramas
+				Enalces heterogeneos
+					No mismos tipos puertos
+						Comunican equipos
+							nic diferentes
+			Administración
+				Control individual
+				Recolectar estadisticas
+			ARP
+				Protocolo de resolución de dirección
+					Descubre dirección hardware
+						de un nodo
+							asociada a una ip
+					Implementado por software
+						kernel SO
+					Tabla ARP
+					Entradas se borran
+					RFC 826
+				Funcionamiento básico:
+					Difundir un mensaje que solicita la
+						dirección MAC de cierta IP
+					Al recibir el mensaje, checar si la
+						MAC corresponde a la IP
+					Si existe una coincidencia, enviar
+						mensaje al emisor de la difusión
+							directamente con la dirección física
+								que solicita
+			Tabla ARP
+				Relaciona IP con MAC
+					
+	Capa Física
